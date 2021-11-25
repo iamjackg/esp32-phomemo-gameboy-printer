@@ -1,0 +1,6 @@
+.pio
+.idea/
+bak
+CMakeListsPrivate.txt
+cmake-build-*/ 
+extra_dev.ini
