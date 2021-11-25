@@ -5,7 +5,9 @@ and an [ESP32][1] module to bridge the two. I used the DOIT DEVIT V1 ESP32-WROOM
 
 <img src="images/print.jpg" alt="picture of the printer with a Pokedex entry" width="640px">
 
-Note that this project is currently very bare bones. I'm hoping to make it a bit more beginner friendly soon, but for now I'm going to assume you have a bit of experience with microcontrollers and whatnot. 
+Note that this project is currently very bare bones. I'm hoping to make it a bit more beginner friendly soon, but for now I'm going to assume you have a bit of experience with microcontrollers and whatnot.
+
+Also note that I don't have much real-world experience with C++ (especially on embedded systems) beyond some small scale Arduino projects, so the code is bound to be horrible and do some Very Bad Things.
 
 ## Getting started
 
@@ -18,8 +20,8 @@ Note that this project is currently very bare bones. I'm hoping to make it a bit
 6. Print!
 
 ## How to Connect
-Consult the [Game Boy Link pin-out](http://www.hardwarebook.info/Game_Boy_Link)
-and connect SO to GPIO 19, SI to GPIO 23 and SC to GPIO 18. If you are not using
+Consult the [Game Boy Link pin-out](http://www.hardwarebook.info/Game_Boy_Link) or [this insidegadgets page](https://www.insidegadgets.com/2018/12/09/making-the-gameboy-link-cable-wireless-packet-based/)
+ to understand what each pin does. Connect SO (Serial Out) to GPIO 19, SI (Serial In) to GPIO 23 and SC (Clock) to GPIO 18. If you are not using
 bi-directional level shifters, make sure that for SO and SC the signal
 direction is from the Game Boy (GB) to the ESP and for SI it is from ESP to
 the GB. You will also have to connect GND on both ends and both VDDs to the
